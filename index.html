@@ -21,9 +21,19 @@
   </style>
 </head>
 <body>
-  <h1><a href="https://www.amazon.co.jp/gp/product/B08P255DXY/" target="_blank" rel="noopener noreferrer">React学習挫折経験者による挫折しないReact基礎学習</a></h1>
-  <div id="root"></div>
+
+  <h1>
+    <a href="https://www.amazon.co.jp/gp/product/B08P255DXY/" target="_blank" rel="noopener noreferrer">
+      React学習挫折経験者による挫折しないReact基礎学習
+    </a>
+  </h1>
+
+  <div id="root">
+    <!-- // ここにReactの要素描画 -->
+  </div>
+
   <script type="text/babel">
+
     // 第1章「Reactの要素描画」
     // ReactDOM.render(
     //   <div>
@@ -34,12 +44,14 @@
     //   document.getElementById('root')
     // );
 
+
     // 第2章「Reactのコンポーネント」
-    // function Box(){
+    // const Box =()=>{
     //   return(
     //     <h2>Reactコンポーネント</h2>
     //     );
     //   }
+
     // ReactDOM.render(
     //   <div>
     //     <Box/>
@@ -49,27 +61,31 @@
     //   document.getElementById('root')
     // );
 
+
     // 第3章「ReactのProps」
-    // function Box(props){
+    // const Box =(props)=>{
     //   return <h2 style={{background:props.color}}> Title is {props.title}. Color is {props.color}</h2>;
     // }
+
     // ReactDOM.render(
     //   <Box title='PROPS' color='skyblue' />,
     //   document.getElementById('root')
     // );
 
+
     // 第4章「ReactのState」
-    const {useState} = React;
+    // const {useState} = React;
 
-    function Box(){
-      const [count, setCount] = useState(0);
-      return <h2 onClick={()=> setCount(count+1)}>Count: {count}</h2>;
-    }
+    // const Box =()=>{
+    //   const [count, setCount] = useState(0);
+    //   return <h2 onClick={()=> setCount(count+1)}>Count: {count}</h2>;
+    // }
 
-    ReactDOM.render(
-      <Box/>,
-      document.getElementById('root')
-    );
+    // ReactDOM.render(
+    //   <Box/>,
+    //   document.getElementById('root')
+    // );
+
   </script>
 </body>
 </html>
